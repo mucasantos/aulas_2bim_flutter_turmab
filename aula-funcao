@@ -1,0 +1,31 @@
+void main() {
+/*
+ *Criar uma função que solicite o valor e também o
+ percentual de arescimo e devolva:
+ 1. O valor percentual
+ 2. O valor final (percentual + valor)
+ 
+ exemplo:
+ minhaFunc(1000,12) ==>
+ 
+o percentual é 120
+O total 1120
+
+ * */
+
+  calculaGastos(double valor, double porcentagem) {
+    double calculo = valor * (porcentagem / 100);
+    
+    print("************************************");
+    print("Valor informado: $valor");
+    print("O percentual é ($porcentagem%): $calculo");
+    print("O valor total é: ${valor + calculo}");
+    print("************************************");
+  }
+
+  calculaGastos(1000, 7);
+  calculaGastos(2500, 8);
+  calculaGastos(3400, 15);
+  calculaGastos(15200, 19);
+  calculaGastos(2790, 18);
+}
